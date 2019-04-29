@@ -1,3 +1,3 @@
 # data_mining
-Data mining lab work in python
-Problem Statements(Exercises)
+<p>Data mining lab work in python</p>
+[Problem Statements](https://github.com/sb565/data_mining/blob/master/Exercises)
