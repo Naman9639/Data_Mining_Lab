@@ -1,0 +1,128 @@
+Exercise
+
+    Exercise 1 File
+        Exercise 2: Make a word scrambler program to scramble every word in the file. Scrambling the word means "keeping first and last letter intact and scramble all other letters randomly". For example, if following is written in file: " This is a  new word scrambler program. "  Then this will be changed to : "Tihs is a wrod srcelabmr pograrm." Punctuation marks won't change their position.
+
+    Exercise 3:
+
+    Question 1: You are required to write a program to sort the (name, age, height) tuples by ascending order where name is string, age and height are numbers. The tuples are input by console. The sort criteria is: 1: Sort based on name; 2: Then sort based on age; 3: Then sort by score. The priority is that name > age > score.
+    If the following tuples are given as input to the program:
+    Tom,19,80
+    John,20,90
+    Jony,17,91
+    Jony,17,93
+    Json,21,85
+    Then, the output of the program should be:
+    [('John', '20', '90'), ('Jony', '17', '91'), ('Jony', '17', '93'), ('Json', '21', '85'), ('Tom', '19', '80')]
+    Hints:
+    In case of input data being supplied to the question, it should be assumed to be a console input.
+    We use item getter to enable multiple sort keys.
+
+    Question 2:
+    Write a Python program to find the list in a list of lists whose sum of elements is the highest. 
+    Sample lists: [1,2,3], [4,5,6], [10,11,12], [7,8,9]
+    Expected Output: [10, 11, 12]
+
+    Question 3:
+    Write a Python program to check whether a list contains a sublist.
+
+
+    Exercise 4:
+    Question 1: Calculate Word Frequencies. Take a set of sentences in a string as an input. Count each unique occurrence of a word and calculate frequency of occurrence and store in a dictionary. Produce a frequency table.
+    Hint: Iterate through the string, placing the words into a dict. The first time a word is seen, the frequency is 1. Each time the word is seen again, increment the frequency. 
+
+    Question 2:Result Calculation. Create a dictionary and a list like following.
+
+    Student = { 'UE183001': 'Avish', 'UE183002': 'Bhavya', 'UE183003': 'Tanya' } Add atleast 10 students
+    Marks = [('UE183001', 'CS', 94 ), ('UE183002', 'CS', 64 ), ('UE183001', 'RV', 94), ('UE183002', 'CS', 74), 
+      ('UE183003', 'CS', 64)] Add some more values
+    Find total marks of each students and display full name of student with total marks secured. This is the basic relational database join algorithm between two tables.
+
+    Question 3: A date of the form 8-MAR-85 includes the name of the month, which must be translated to a number. Create a dict suitable for decoding month names to numbers. Create a function which uses string operations to split the date into 3 items using the "-" character. Translate the month, correct the year to include all of the digits.
+    The function will accept a date in the "dd-MMM-yy" format and respond with a tuple of ( y , m , d ).
+
+    Question 4: Dice Odds. There are 36 possible combinations of two dice. A sim→ple pair of loops over range(6)+1 will enumerate all combinations. The sum of the two dice is more interesting than the actual combination. Create a dict of all combinations, using the sum of the two dice as the key. Each value in the dict should be a list of tuples; each tuple has the value of two dice. The general outline is something like the following:
+    d= {}
+    Loop with d1 from 1 to 6
+        Loop with d2 from 1 to 6
+            newTuple ← ( d1, d2 ) # create the tuple
+            oldList ← dictionary entry for sum d1+d2
+            newList ← oldList + newTuple
+            replace entry in dictionary with newList
+    Loop over all values in the dictionary
+    print the key and the length of the list
+     
+
+    Exercise 5:
+
+    1.Create a function to check whether numpy array has Zero values or not.
+
+    2.Consider an array contains marks of students. Find the median and mean of students who got passing marks.
+
+    3.Consider an array containing date of birth of students (Use np.datetime64('2018-02-01')). Find the age of all students. If age is 18 label it First, if it is 19, label it Second, if it is 20, label it Third, if it is 21, label it Fourth.
+
+    4.Create a function to sort 2d Array by a column.
+
+    5.Create one hot encoding of an array. For example For an array([2, 3, 2, 2, 2, 1]) Output should be
+
+       array([[ 0.,  1.,  0.],
+
+                 [ 0.,  0.,  1.],
+
+                 [ 0.,  1.,  0.],
+
+                 [ 0.,  1.,  0.],
+
+                 [ 0.,  1.,  0.],
+
+                [ 1.,  0.,  0.]])
+
+    6.Drop all missing values from an array Input: np.array([1,2,3,np.nan,5,6,7,np.nan]) Desired Output: array([ 1.,2.,3.,5.,6.,7.])
+
+    7.Find Local maxima from an array. Input: a = np.array([1, 3, 7, 1, 2, 6, 0, 1]) Desired Output: array([2, 5])
+
+    8.From the given 1d array arr, generate a 2d matrix using strides,
+
+    For example for an array ([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14])with a window length of w=4 and strides of s=2, like [[0,1,2,3], [2,3,4,5], [4,5,6,7]..]
+
+    w and s will be provided by user
+
+    Exercise 6:
+
+    Read online retail data (On top of this page) using csv module and perform following operations
+
+    1. Find mean, std dev, min , max of unitprice field.
+
+    2. Draw histogram of unitprice field using matplotlib
+
+    3. Find mean of unitprice group by country and plot them
+
+    4. Find min and max of unit price group by customerID
+
+    5. Find cumulative sales monthly and yearly and plot them
+
+    Exercise 7:
+
+    1. List the top 10 quality ranked colleges
+    2. List all the colleges in California
+    3. Which college has lowest average debt?
+    4. List bottom 10 cost rank colleges
+    5. Among colleges having more than 2000 undergraduates, which has highest faculty/student ratio.
+    6. Which college has aid in grant more than 80% and costliest in total cost?
+    7. Among top 50 quality rank colleges, which has lowest total cost
+
+    Exercise 8:
+
+    1. Normalize each attribute of college dataset into range 0 to 1 (Refer to slides to do min-max normalization). 
+
+    2. Implement information gain analysis on the colleges dataset to find the gain of each attribute as covered in the class. 
+
+    Exercise 9:
+
+    Execute the Apriori Notebook uploaded above. Modify this to execute on colleges dataset (Remove unwanted columns and discretize others before running algorithm). Display top 10 rules.
+
+    Exercise 10: Compare following classifier on Iris, digits and boston dataset of sklearn: Calculate accuracy of following classifiers
+
+     KNeighborsClassifier(3),     SVC(kernel="linear", C=0.025),     SVC(gamma=2, C=1),     GaussianProcessClassifier(1.0 * RBF(1.0)),     DecisionTreeClassifier(max_depth=5),     RandomForestClassifier(max_depth=5, n_estimators=10, max_features=1),     MLPClassifier(alpha=1),     AdaBoostClassifier(),     GaussianNB(),     QuadraticDiscriminantAnalysis()]
+
+    Exercise 11: Run the Clustering Notebook  by changing the centres [[0.5,1], [0.7,1], [0.9,1]]  see the difference and plot it separately.
